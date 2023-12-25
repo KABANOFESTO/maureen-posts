@@ -202,12 +202,13 @@ footer {
 
 .board2 {
     font-size: 20px;
+    margin-top: 0.5em;
 }
 
 .board2 h4 {
     display: flex;
     color: white;
-    margin-top: -20px;
+    margin-top: -25px;
     margin-left: 25px;
 }
 
