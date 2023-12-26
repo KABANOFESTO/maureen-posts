@@ -114,7 +114,7 @@ label.brand {
     font-weight: bold;
     font-size: 30px;
     font-family: Algerian;
-    margin-top: 0.5em;
+    margin-top: -0.5em;
     margin-left: 1.5em;
 }
 
@@ -297,7 +297,8 @@ input[type=text] {
     width: 100%;
     background-color: white;
 }
-.submit-btn{
+
+.submit-btn {
     background-color: darkblue;
     color: white;
     text-align: left;
@@ -306,13 +307,15 @@ input[type=text] {
     font-family: argelian;
     font-weight: 100px;
 }
-.submit-btn::after{
-    background-color: rgb(104, 104, 153);    
+
+.submit-btn::after {
+    background-color: rgb(104, 104, 153);
 }
 
-.submit-btn:hover{
-    background-color: rgb(104, 104, 153);    
+.submit-btn:hover {
+    background-color: rgb(104, 104, 153);
 }
+
 #tcontact {
     padding: 0 20px;
     width: 100%;
