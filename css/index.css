@@ -12,7 +12,7 @@
 
 body {
     font-family: montserrat;
-    background-color:white;
+    background-color: white;
 }
 
 .menus {
@@ -244,11 +244,11 @@ footer {
 }
 
 #about .right {
-    background-color:white;
+    background-color: white;
     font-size: 25px;
     margin-left: 2em;
     width: 50%;
-    
+
 }
 
 #about img {
@@ -257,6 +257,91 @@ footer {
     margin-top: -7em;
     margin-left: 8em;
     border-radius: 100%;
+}
+
+#services-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#services-image img {
+    width: 300px;
+    height: 300px;
+    border: 4px solid black;
+    border-radius: 100%;
+
+
+}
+
+#service-body {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#service-body div li {
+    list-style-type: '👉';
+}
+
+.sweetH {
+    background: linear-gradient(to bottom, rgb(27, 98, 126) 0%, rgb(27, 98, 126) 100%);
+    height: 10em;
+    width: 10em;
+    clip-path: polygon(100% 100%,
+            100% 0%,
+            0% 100%,
+            0% 0%);
+    margin-left: -3em;
+    border-radius: 80px;
+}
+
+#contact {
+    width: 45em;
+    height: 40em;
+    margin-top: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(27, 98, 126);
+
+}
+
+#contact div {
+    margin: 0 100px;
+}
+
+input[type=text] {
+    height: 50px;
+    width: 294px;
+    background-color: white;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#mess {
+    height: 170px;
+    width: 100%;
+    background-color: white;
+}
+
+#tcontact {
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#tTable {
+    background-color: rgb(27, 98, 126);
+    height: 20em;
+}
+
+#frame {
+    margin-top: 6em;
 }
 
 #skill {
@@ -318,51 +403,8 @@ span {
 
 }
 
-.progress #progre {
-    height: 10px;
-    width: 90%;
-    border-radius: 10px;
-    background-color: #14E81D;
-    margin-left: -1px;
-}
-
-.progress #progr {
-    height: 10px;
-    width: 80%;
-    border-radius: 10px;
-    background-color: #14E81D;
-    margin-left: -1px;
-}
-
-.progress #prog {
-    height: 10px;
-    width: 75%;
-    border-radius: 10px;
-    background-color: #14E81D;
-    margin-left: -1px;
-}
-
-.progress #pro {
-    height: 10px;
-    width: 70%;
-    border-radius: 10px;
-    background-color: #14E81D;
-    margin-left: -1px;
-}
-
 #lang {
     color: white;
-}
-
-#contact {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#contact div {
-    justify-content: space-between;
-    padding: 30px;
-    margin: 0 20px;
 }
 
 input[type=text] {
