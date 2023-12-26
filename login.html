@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link href="./css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+        form {
+            background-image: url("./images/skylight.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            align-items: center;
+        }
+
+        form img {
+            width: 5vw;
+            height: 10vh;
+            border-radius: 100%;
+        }
+
+        table {
+            width: 20em;
+            height: 30em;
+            text-align: center;
+            background-color: rgb(17, 66, 86);
+        }
+
+        input[type=email] {
+            height: 50px;
+            width: 294px;
+            background-color: transparent;
+            text-align: center;
+            color: white;
+            font-weight: 100px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        input[type=password] {
+            height: 50px;
+            width: 294px;
+            background-color: transparent;
+            color: white;
+            font-weight: 100px;
+            text-align: center;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        button {
+            width: 294px;
+            height: 50px;
+            background-color: brown;
+            font-size: 20px;
+            font-weight: 60px;
+        }
+
+        button:hover {
+            width: 250px;
+            height: 45px;
+            background-color: rgb(206, 156, 156);
+            font-size: 20px;
+            font-weight: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menus">
+            <a href="index.html">
+                <label class="brand">
+                    <h4 style="color: grey;">Kalal</h4>
+                    <h4 style="color: white;">Insipration</h4>
+                </label>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5502/index.html#about-section" onclick="hidePage('about-section')">About</a></li>
+                <li><a href="http://127.0.0.1:5502/index.html#Services" onclick="hidePage('skill-section')">Services</a></li>
+                <li><a href="http://127.0.0.1:5502/index.html#contact-section">Contact</a></li>
+                <li><a href="login.html" class="sign"><i class="bi bi-person-fill"></i>Sign-In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br /><br /><br /><br /><br />
+    <main>
+        <form method="post" class="login">
+            <br /><br /><br /><br /><br />
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <h2><b><i>Login Form</i></b></h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="profile"><img src="./images/kalal.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Write your Email" id="email" required></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type="password" name="pwd" placeholder="Write your password" id="username" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><input type="checkbox" name="paswd" value="Remember me">&nbsp;Remember me
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Forgot password?
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>Login</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Create a new Account</h2>
+                            <h5>(OR)</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>
+                                <p style="justify-content: space-around;font-size: 20px;">
+                                    <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;<i
+                                        class="bi bi-twitter"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="bi bi-linkedin"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i>
+                                </p>
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+            <br /><br /><br /><br /><br />
+        </form>
+    </main>
+    <footer>
+        <div class="board">
+            <label class="brand2">
+                <h4 style="color: grey;">Kalal</h4>
+                <h4 style="color: white;">Insipration</h4>
+            </label>
+            <br /><br />
+            <article class="footerMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5502/index.html#about-section" onclick="hidePage('about-section')">About</a></li>
+                    <li><a href="http://127.0.0.1:5502/index.html#Services" onclick="hidePage('skill-section')">Services</a></li>
+                    <li><a href="http://127.0.0.1:5502/index.html#contact-section">Contact</a></li>
+                    <li><a href="login.html" class="sign"><i class="bi bi-person-fill"></i>Sign-In</a></li>
+                </ul>
+            </article>
+            <br /><br />
+            <p>
+            <h4 id="copy">Festo KABANO©2024</h4>
+            </p>
+        </div>
+        <div class="board2">
+            <p><i class="bi bi-geo-alt-fill"></i>&nbsp;
+            <h4>KG 624 St, Kigali</h4>
+            </p>
+            <br /><br />
+            <p><i class="bi bi-telephone-fill"></i>&nbsp;
+            <h4>0784040924</h4>
+            </p>
+            <br /><br />
+            <p><i class="bi bi-envelope-at-fill"></i>&nbsp;
+            <h4>kabanofesto1@gmail.com</h4>
+            </p>
+        </div>
+        <div class="board3">
+            <p>
+            <h2>About me!</h2>
+            </p>
+            <br />
+            <p>Developers are modern-day architects, <br />constructing the virtual realms we navigate.
+                <br />Through intricate coding, they give life to software,<br /> weaving innovation into every line.
+                <br />Their work shapes the technological landscape,
+                <br /> defining the future of digital experiences
+            </p>
+            <br />
+            <p style="justify-content: space-around;font-size: 20px;">
+                <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-twitter"></i>&nbsp;&nbsp;&nbsp;
+                <i class="bi bi-linkedin"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

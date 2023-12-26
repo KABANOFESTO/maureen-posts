@@ -126,37 +126,6 @@ label.brand2 {
     margin-top: -1em;
 }
 
-#img {
-    margin-top: 5.5em
-}
-
-#home-Body {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#home-Body div {
-    margin: auto;
-}
-
-#pra {
-    color: white;
-    margin-top: 7rem;
-}
-
-input[type=button] {
-    height: 40px;
-    width: 100px;
-    background-color: white;
-
-}
-
-input[type=button]:active {
-    height: 40px;
-    width: 105px;
-    background-color: green;
-}
-
 footer {
     background-color: rgb(27, 98, 126);
     justify-content: space-around;
@@ -328,7 +297,22 @@ input[type=text] {
     width: 100%;
     background-color: white;
 }
+.submit-btn{
+    background-color: darkblue;
+    color: white;
+    text-align: left;
+    width: 122px;
+    height: 20px;
+    font-family: argelian;
+    font-weight: 100px;
+}
+.submit-btn::after{
+    background-color: rgb(104, 104, 153);    
+}
 
+.submit-btn:hover{
+    background-color: rgb(104, 104, 153);    
+}
 #tcontact {
     padding: 0 20px;
     width: 100%;
@@ -344,69 +328,6 @@ input[type=text] {
     margin-top: 6em;
 }
 
-#skill {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#skill div {
-    margin: auto;
-}
-
-.skillPra {
-    color: black;
-    font-weight: bold;
-    display: flex;
-    margin-left: 2.5em;
-    margin-top: 2em;
-}
-
-.skillPr {
-    color: black;
-    font-weight: bold;
-    display: flex;
-}
-
-#pra1 {
-    background-color: darkgrey;
-    height: 8.33%;
-    width: 35%;
-    font-weight: bold;
-    text-align: center;
-    border: 2px solid darkslategrey;
-}
-
-#pra2 {
-    background-color: darkgrey;
-    height: 8.33%;
-    width: 35%;
-    font-weight: bold;
-    text-align: center;
-    border: 2px solid darkslategrey;
-}
-
-#mbody {
-    color: black;
-}
-
-.progress {
-    height: 10px;
-    width: 30em;
-    background-color: white;
-    border-radius: 10px;
-}
-
-span {
-    font-size: 14px;
-    color: white;
-    font-weight: bold;
-
-}
-
-#lang {
-    color: white;
-}
-
 input[type=text] {
     width: 50em;
     height: 6vh;
@@ -414,23 +335,8 @@ input[type=text] {
     text-align: center;
 }
 
-#mess {
-    height: 170px;
-    width: 100%;
-    background-color: white;
-}
 
-#porto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2px;
-    margin: 0 22px;
-}
 
-#protfolio {
-    text-align: center;
-}
 
 #blogContainer {
     display: flex;
@@ -438,56 +344,19 @@ input[type=text] {
     justify-content: space-around;
 }
 
-#blogContainer .blogItem {
-    margin: 2rem;
-    padding-left: -10%;
+span {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+
 }
 
 #blogContainer img {
-    height: 400px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
 }
 
 #blogContainer div p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-}
-
-.likes {
-    padding-right: 50px;
-}
-
-.submit-btn {
-    margin-left: 17rem;
-}
-
-@media(max-width:400px) {
-    .taggle-botton {
-        display: flex;
-
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
-
-    .nav ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .nav ul li {
-        text-align: center;
-    }
-
-    .nav ul li {
-        padding: .5rem 1rem;
-    }
-
 }
