@@ -8,12 +8,12 @@
 //         skill.style.display="none"
 //     }
 //     else if(skill) {
-        
+
 //         about.style.display="none";
 //     }
 // }
 function hidePage(targetSectionId) {
-    const sections = ["about-section", "skill-section"]; 
+    const sections = ["about-section", "skill-section"];
 
     for (const sectionId of sections) {
         const section = document.getElementById(sectionId);

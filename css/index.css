@@ -12,7 +12,7 @@
 
 body {
     font-family: montserrat;
-    background-color: rgb(238, 232, 232);
+    background-color:white;
 }
 
 .menus {
@@ -117,7 +117,8 @@ label.brand {
     margin-top: 0.5em;
     margin-left: 1.5em;
 }
-label.brand2{
+
+label.brand2 {
     display: flex;
     font-weight: bold;
     font-size: 25px;
@@ -224,13 +225,38 @@ footer {
     font-weight: bold;
 }
 
-#about {
-    display: flex;
-    flex-wrap: wrap;
+#about-section {
+    margin-top: 10em;
+    height: 100%;
 }
 
-#about div {
-    margin: auto;
+#about {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20em;
+}
+
+#about .left {
+    background-color: rgb(27, 98, 126);
+    color: white;
+    width: 40%;
+    height: 50em;
+}
+
+#about .right {
+    background-color:white;
+    font-size: 25px;
+    margin-left: 2em;
+    width: 50%;
+    
+}
+
+#about img {
+    width: 15em;
+    height: 15em;
+    margin-top: -7em;
+    margin-left: 8em;
+    border-radius: 100%;
 }
 
 #skill {
@@ -272,10 +298,6 @@ footer {
     font-weight: bold;
     text-align: center;
     border: 2px solid darkslategrey;
-}
-
-#sbody {
-    color: black;
 }
 
 #mbody {
