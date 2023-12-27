@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link href="./css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="menus">
-            <a href="index.html">
-                <label class="brand">
-                    <h4 style="color: grey;">Kalal</h4>
-                    <h4 style="color: white;">Insipration</h4>
-                </label>
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about-section" onclick="hidePage('about-section')">About</a></li>
-                <li><a href="#Services" onclick="hidePage('skill-section')">Services</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-                <li><a href="login.html" class="sign"><i class="bi bi-person-fill"></i>Sign-In</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                    <a href="index.html">KALALA</a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                      </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-section" onclick="hidePage('about-section')">About</a></li>
+                    <li><a href="#Services" onclick="hidePage('skill-section')">Services</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="login.html" class="sign"><i class="bi bi-person-fill"></i>Sign-In</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                  </div>
+            </div>
         </nav>
+        <div class="banner"></div>
     </header>
     <main>
         <section id="body-section">
@@ -40,8 +47,8 @@
                         <p>Embrace vibrant hues for a confident <br /> seasonal style that commands <br />
                             attention.
                             <br />
-                            <span>&nbsp;<i class="bi bi-person-fill"></i>&nbsp;&nbsp;KALAL-insipration
-                                <i class="bi bi-calendar3" style="margin-left:100px;"></i>Jan, 25,2024
+                            <span>&nbsp;<i class="bi bi-person-fill" style="margin-left:0%;"></i>KALAL-insipration
+                                <i class="bi bi-calendar3" style="margin-left:35%;"></i>Jan, 25,2024
                             </span>
                         </p>
                     </div>
@@ -50,8 +57,8 @@
                         <p>Embrace vibrant hues for a confident <br /> seasonal style that commands <br />
                             attention.
                             <br />
-                            <span>&nbsp;<i class="bi bi-person-fill"></i>&nbsp;&nbsp;KALAL-insipration
-                                <i class="bi bi-calendar3" style="margin-left:100px;"></i>Jan, 25,2024
+                            <span>&nbsp;<i class="bi bi-person-fill" style="margin-left:0%;"></i>KALAL-insipration
+                                <i class="bi bi-calendar3" style="margin-left:35%;"></i>Jan, 25,2024
                             </span>
                         </p>
                     </div>
@@ -60,8 +67,8 @@
                         <p>Embrace vibrant hues for a confident <br /> seasonal style that commands <br />
                             attention.
                             <br />
-                            <span>&nbsp;<i class="bi bi-person-fill"></i>&nbsp;&nbsp;KALAL-insipration
-                                <i class="bi bi-calendar3" style="margin-left:100px;"></i>Jan, 25,2024
+                            <span>&nbsp;<i class="bi bi-person-fill" style="margin-left:0%;"></i>KALAL-insipration
+                                <i class="bi bi-calendar3" style="margin-left:35%;"></i>Jan, 25,2024
                             </span>
                         </p>
                     </div>
@@ -178,7 +185,7 @@
         <br /><br /><br /><br />
         <section id="contact-section">
             <div id="contact">
-                <div style="color:white">
+                <div class="contactinfo">
                     <p>
                     <h1 style="text-align: center;"><b>CONTACT Me!</b></h1>
                     </p>
@@ -200,9 +207,8 @@
                         </tr>
                     </table>
                     <br> <br> <br>
-                    <table id="tTable">
                         <form method="post">
-
+                            <table id="tTable">
                             <tr>
                                 <td><input type="text" name="lfname" placeholder="Name" id="username"></td>
                             </tr>
@@ -223,8 +229,8 @@
                                     <input type="submit" class="submit-btn" value="CLICK TO SUBMIT!" />
                                 </td>
                             </tr>
+                        </table>
                         </form>
-                    </table>
                     <p>
                     <h4 style="text-align: center;">Follow me to the social Media:</h4>
                     </p>
@@ -236,8 +242,7 @@
                     </h4>
                     </p>
                 </div>
-                <br>
-                <div>
+                <div id="container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.494644005991!2d30.10171597488123!3d-1.9555546980267258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6f9a9f85475%3A0x81d16dcc3c7b2f4b!2sAUCA%20Gishushu%20Campus!5e0!3m2!1sen!2srw!4v1697782052662!5m2!1sen!2srw"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -298,6 +303,25 @@
             </p>
         </div>
     </footer>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
 </body>
 
 </html>
