@@ -51,7 +51,7 @@
 
 .navbar .logo a {
     color: #fff;
-    font-family:Bradley Hand ITC;
+    font-family: Bradley Hand ITC;
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
@@ -80,11 +80,12 @@
 
 .banner {
     background: url("../images/sky.jpg") no-repeat;
-    height: 100vh; 
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 .icon {
     color: #fff;
     font-size: 20px;
@@ -114,63 +115,73 @@ label.brand2 {
 }
 
 @media (max-width: 868px) {
-    body.disabled{
-      overflow: hidden;
+    body.disabled {
+        overflow: hidden;
     }
-    .icon{
-      display: block;
+
+    .icon {
+        display: block;
     }
-    .icon.hide{
-      display: none;
+
+    .icon.hide {
+        display: none;
     }
-    .navbar .menu-list{
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      max-width: 400px;
-      left: -100%;
-      top: 0px;
-      display: block;
-      padding: 40px 0;
-      text-align: center;
-      background: #222;
-      transition: all 0.3s ease;
+
+    .navbar .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
     }
-    .navbar.show .menu-list{
-      left: 0%;
+
+    .navbar.show .menu-list {
+        left: 0%;
     }
-    .navbar .menu-list li{
-      margin-top: 45px;
+
+    .navbar .menu-list li {
+        margin-top: 45px;
     }
-    .navbar .menu-list li a{
-      font-size: 23px;
-      margin-left: -100%;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    .navbar .menu-list li a {
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    .navbar.show .menu-list li a{
-      margin-left: 0px;
+
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
     }
+
     #contact {
-         min-height: 100vh;
-         width: 100%;
-         display: flex;
-         flex-wrap: wrap;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         background: url(../images/sky.jpg) no-repeat;
-         background-size: cover;
-     }
-     #frame{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(../images/sky.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    #frame {
         width: 100%;
         margin-top: 25%;
     }
-  }
-  @media (max-width: 380px) {
-    .navbar .logo a{
-      font-size: 27px;
+}
+
+@media (max-width: 380px) {
+    .navbar .logo a {
+        font-size: 27px;
     }
-  }
+}
 
 
 /* ... (rest of your styles remain unchanged) */
@@ -327,6 +338,7 @@ footer {
     background: url(../images/sky.jpg) no-repeat;
     background-size: cover;
 }
+
 #mess {
     height: 170px;
     width: 100%;
@@ -351,6 +363,7 @@ footer {
 .submit-btn:hover {
     background-color: rgb(104, 104, 153);
 }
+
 #tcontact {
     width: 100%;
     text-align: center;
@@ -373,17 +386,20 @@ input[type=text] {
     border-right: none;
     color: white;
 }
-.contactinfo h1{
+
+.contactinfo h1 {
     font-size: 36px;
     font-weight: 500;
     color: white;
 }
-.contactinfo p{
+
+.contactinfo p {
     font-size: 36px;
     font-weight: 300;
     color: black;
 }
-#frame{
+
+#frame {
     margin-top: 25%;
 }
 
