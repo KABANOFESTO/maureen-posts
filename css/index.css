@@ -277,6 +277,7 @@ footer {
     width: 38%;
     text-align: center;
     height: 100vh;
+    border-radius: 5em 3em 4em / 0.5em 3em;
 }
 
 #about .right {
@@ -288,7 +289,7 @@ footer {
 
 #about img {
     width: 40%;
-    height: 30%;
+    margin-top: -100px;
     background-color: white;
     border-radius: 100%;
 }
