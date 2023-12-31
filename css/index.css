@@ -265,7 +265,30 @@ label.brand2 {
 }
 
 @media (max-width: 480px){
-  
+    .banner{
+        margin-left: 10%;
+    }
+    #body-section{
+        margin-left: 10%;    
+    }
+    #about-section{
+        margin-left: 10%;   
+    }
+    #Services{
+        margin-left: 10%;   
+    }
+    #contact-section{
+        margin-left: 10%;   
+    }
+    footer{
+        margin-left: 10%;     
+    }
+    .brand2 h4{
+        display: none;
+    }
+
+
+
     .content-about1 p{
         font-size: 15px;
     }
