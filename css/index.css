@@ -258,6 +258,9 @@ label.brand2 {
     .board3 p{
         display: none;
     }
+    .board3 h5{
+        display: none;
+    }
     .board h5{
         display: none;
     }
@@ -339,6 +342,33 @@ label.brand2 {
     #service-body{
         margin-top: -40%;
     }
+    .brand3 h2{
+        display: none;
+    }
+}
+
+@media (min-width: 375px){
+    .about-article  .h4{
+        font-size: 15px;
+    }    
+    .content-about1 p{
+        font-size: 10px;
+    }
+    .about-icon i{
+        font-size: 10px;  
+    }
+    .content-about p{
+        font-size: 8px;   
+    }
+    .contactinfo h3 {
+        font-size: 11px;
+    }
+    #tcontact {
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 
@@ -451,6 +481,10 @@ footer {
     background-color: white;
     border-radius: 100%;
 }
+
+.about-article h4{
+    font-size: 25px;
+} 
 #services-image {
     display: flex;
     flex-direction: row;
