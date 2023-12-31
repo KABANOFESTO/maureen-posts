@@ -558,7 +558,8 @@ footer {
     background-color: rgb(104, 104, 153);
 }
 
-#tcontact {
+.tcontact {
+    font-size: 25px;
     width: 100%;
     text-align: center;
 }
@@ -588,8 +589,8 @@ input[type=text] {
     font-family:algerian;
 }
 
-.contactinfo p {
-    font-size: 36px;
+.contactinfo .h3 {
+    font-size: 20px;
     font-weight: 300;
     color: white;
 }
