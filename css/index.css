@@ -227,22 +227,6 @@ label.brand2 {
 
     }
 
-    .service-left ul {
-        border: 7px solid black;
-        border-style: double;
-        border-bottom: none;
-        border-top: none;
-        border-left: none;
-    }
-
-    .service-right ul {
-        border: 7px solid black;
-        border-style: double;
-        border-bottom: none;
-        border-top: none;
-        border-right: none;
-    }
-
     .content-about1 p {
         font-size: 20px;
     }
@@ -382,7 +366,7 @@ label.brand2 {
     }
 
     #service-body {
-        margin-top: -40%;
+        margin-top: -45%;
     }
 
     .brand3 h2 {
@@ -415,6 +399,43 @@ label.brand2 {
 
 }
 */
+#Services {
+    max-height: 100vh;
+    width: 90%;
+    background: url(../images/services.jpg) no-repeat;
+    background-size: cover;
+}
+#Services .i{
+    font-size: 30px;
+}
+
+.service-left {
+    border: 7px solid black;
+    border-style: double;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+}
+
+.service-left h4 {
+    color: black;
+    font-family: Bradley Hand ITC;
+    font-weight: 600;
+}
+
+.service-right {
+    border: 7px solid black;
+    border-style: double;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+
+.service-right h4 {
+    color: black;
+    font-family: Bradley Hand ITC;
+    font-weight: 600;
+}
 
 footer {
     background-color: rgb(27, 98, 126);
@@ -517,8 +538,8 @@ footer {
 }
 
 #about img {
-    width: 40%;
-    margin-top: -100px;
+    width: 30%;
+    margin-top: -80px;
     background-color: white;
     border-radius: 100%;
 }
@@ -549,6 +570,7 @@ footer {
 }
 
 #service-body div li {
+    text-align: left;
     list-style-type: '👉';
 }
 
