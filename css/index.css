@@ -27,12 +27,13 @@
     margin: auto;
     padding: 0 30px;
 }
-.content-about{
+
+.content-about {
     max-width: 1250px;
     margin: auto;
     font-size: 20px;
     padding: 0 30px;
-    width: 100%;   
+    width: 100%;
 }
 
 .navbar {
@@ -93,6 +94,14 @@
     background-attachment: fixed;
 }
 
+.banner1 {
+    background: url("../images/up.gif") no-repeat;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .icon {
     color: #fff;
     font-size: 20px;
@@ -120,27 +129,31 @@ label.brand2 {
         max-width: 100%;
     }
 }
+
 @media (max-width: 1230px) {
-    .content{
-      padding: 0 60px;
+    .content {
+        padding: 0 60px;
     }
-  }
-  @media (max-width: 1100px) {
-    .content{
-      padding: 0 40px;
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
     }
-  }
-  @media (max-width: 900px) {
-    .content{
-      padding: 0 30px;
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: 0 30px;
     }
-  }
+}
 
 @media (max-width: 868px) {
-    .content-about p{
-        font-size: 15px;   
+    .content-about p {
+        font-size: 15px;
     }
-    .banner{
+
+    .banner {
         max-width: 100%;
     }
 
@@ -210,26 +223,30 @@ label.brand2 {
         max-height: 70%;
         border: 4px solid black;
         border-radius: 100%;
-    
-    
+
+
     }
-    .service-left ul{
+
+    .service-left ul {
         border: 7px solid black;
         border-style: double;
         border-bottom: none;
         border-top: none;
         border-left: none;
     }
-    .service-right ul{
-        border:7px solid black;
+
+    .service-right ul {
+        border: 7px solid black;
         border-style: double;
         border-bottom: none;
         border-top: none;
         border-right: none;
     }
-    .content-about1 p{
+
+    .content-about1 p {
         font-size: 20px;
     }
+
     #about .left {
         background-color: rgb(27, 98, 126);
         color: white;
@@ -237,12 +254,14 @@ label.brand2 {
         height: 80vh;
         border-radius: 5em 3em 4em / 0.5em 3em;
     }
+
     #about .right {
         background-color: #fff;
         width: 60%;
         height: 50vh;
-    
+
     }
+
     footer {
         background-color: rgb(27, 98, 126);
         justify-content: space-around;
@@ -250,63 +269,78 @@ label.brand2 {
         max-width: 100%;
         display: flex;
         flex-direction: row;
-    
+
     }
-    .footerMenu ul li{
+
+    .footerMenu ul li {
         display: none;
     }
-    .board3 p{
+
+    .board3 p {
         display: none;
     }
-    .board3 h5{
+
+    .board3 h5 {
         display: none;
     }
-    .board h5{
+
+    .board h5 {
         display: none;
     }
 
 }
 
-@media (max-width: 480px){
-    .banner{
+@media (max-width: 480px) {
+    .banner {
         margin-left: 10%;
     }
-    #body-section{
-        margin-left: 10%;    
+
+    #body-section {
+        margin-left: 10%;
     }
-    #about-section{
-        margin-left: 10%;   
+
+    #about-section {
+        margin-left: 10%;
     }
-    #Services{
-        margin-left: 10%;   
+
+    #Services {
+        margin-left: 10%;
     }
-    #contact-section{
-        margin-left: 10%;   
+
+    #contact-section {
+        margin-left: 10%;
     }
-    footer{
-        margin-left: 10%;     
+
+    footer {
+        margin-left: 10%;
     }
-    .brand2 h4{
+
+    .brand2 h4 {
         display: none;
     }
 
 
 
-    .content-about1 p{
+    .content-about1 p {
         font-size: 15px;
     }
-   .about-icon i{
-        font-size: 15px;  
+
+    .about-icon i {
+        font-size: 15px;
     }
-    .content-about p{
+
+    .content-about p {
         font-size: 10px;
     }
-    .content-about h2 i{
+
+    .content-about h2 i {
         font-size: 15px;
     }
-  .about-article h2{
+
+    .about-article h2 {
         font-size: 5px;
     }
+
     #about .left {
         background-color: rgb(27, 98, 126);
         color: white;
@@ -314,41 +348,51 @@ label.brand2 {
         height: 50vh;
         border-radius: 5em 3em 4em / 0.5em 3em;
     }
+
     span {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
     }
-    .service-left h4{
+
+    .service-left h4 {
         font-size: 15px;
     }
-    .service-right h4{
+
+    .service-right h4 {
         font-size: 15px;
     }
-    .service-left ul{
+
+    .service-left ul {
         font-size: 10px;
     }
-    .service-right ul{
+
+    .service-right ul {
         font-size: 10px;
     }
+
     #services-image img {
         max-width: 70%;
         max-height: 40%;
         border: 4px solid black;
-        border-radius: 100%; 
+        border-radius: 100%;
     }
-    #Services i{
+
+    #Services i {
         font-size: 20px;
     }
-    #service-body{
+
+    #service-body {
         margin-top: -40%;
     }
-    .brand3 h2{
+
+    .brand3 h2 {
         display: none;
     }
 }
 
-@media (min-width: 375px){
-    .about-article  .h4{
+/*
+@media (max-width: 375px){
+    .about-article  .h6{
         font-size: 15px;
     }    
     .content-about1 p{
@@ -370,10 +414,7 @@ label.brand2 {
     }
 
 }
-
-
-/* ... (rest of your styles remain unchanged) */
-
+*/
 
 footer {
     background-color: rgb(27, 98, 126);
@@ -482,9 +523,10 @@ footer {
     border-radius: 100%;
 }
 
-.about-article h4{
+.about-article h4 {
     font-size: 25px;
-} 
+}
+
 #services-image {
     display: flex;
     flex-direction: row;
@@ -558,8 +600,8 @@ footer {
     background-color: rgb(104, 104, 153);
 }
 
-.tcontact {
-    font-size: 25px;
+#tcontact {
+    font-size: 10px;
     width: 100%;
     text-align: center;
 }
@@ -586,7 +628,7 @@ input[type=text] {
     font-size: 36px;
     font-weight: 500;
     color: white;
-    font-family:algerian;
+    font-family: algerian;
 }
 
 .contactinfo .h3 {

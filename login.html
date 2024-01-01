@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
     <link href="./css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <style>
         form {
@@ -69,28 +70,39 @@
             font-size: 20px;
             font-weight: 60px;
         }
+
+        @media (max-width:868px) {
+            form img {
+                max-width: 100%;
+                max-height: 40%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="menus">
-            <a href="index.html">
-                <label class="brand">
-                    <h4 style="color: grey;">Kalal</h4>
-                    <h4 style="color: white;">Insipration</h4>
-                </label>
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="http://127.0.0.1:5502/index.html#about-section"
-                        onclick="hidePage('about-section')">About</a></li>
-                <li><a href="http://127.0.0.1:5502/index.html#Services" onclick="hidePage('skill-section')">Services</a>
-                </li>
-                <li><a href="http://127.0.0.1:5502/index.html#contact-section">Contact</a></li>
-                <li><a href="login.html" class="sign"><i class="bi bi-person-fill"></i>Sign-In</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                    <a href="index.html">KALALA</a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-section" onclick="hidePage('about-section')">About</a></li>
+                    <li><a href="#Services" onclick="hidePage('skill-section')">Services</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="login.html" class="sign"><i class="bi bi-person-fill"></i>Sign-In</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </nav>
+        <div class="banner1"></div>
     </header>
     <br /><br /><br /><br />
     <main>
@@ -116,7 +128,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <h4><input type="checkbox" name="paswd" value="Remember me">&nbsp;Remember me
+                            <h4 style="font-size: 15px;"><input type="checkbox" name="paswd"
+                                    value="Remember me">&nbsp;Remember me
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 Forgot password?
                             </h4>
@@ -150,58 +163,31 @@
         </form>
     </main>
     <footer>
-        <div class="board">
-            <label class="brand2">
-                <h4 style="color: grey;">Kalal</h4>
-                <h4 style="color: white;">Insipration</h4>
-            </label>
-            <br /><br />
-            <article class="footerMenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="http://127.0.0.1:5502/index.html#about-section"
-                            onclick="hidePage('about-section')">About</a></li>
-                    <li><a href="http://127.0.0.1:5502/index.html#Services"
-                            onclick="hidePage('skill-section')">Services</a></li>
-                    <li><a href="http://127.0.0.1:5502/index.html#contact-section">Contact</a></li>
-                    <li><a href="login.html" class="sign"><i class="bi bi-person-fill"></i>Sign-In</a></li>
-                </ul>
-            </article>
-            <br /><br />
+        <div style="color: #fff;font-size: 25px;">
             <p>
-            <h4 id="copy">Festo KABANO©2024</h4>
-            </p>
-        </div>
-        <div class="board2">
-            <p><i class="bi bi-geo-alt-fill"></i>&nbsp;
-            <h4>KG 624 St, Kigali</h4>
-            </p>
-            <br /><br />
-            <p><i class="bi bi-telephone-fill"></i>&nbsp;
-            <h4>0784040924</h4>
-            </p>
-            <br /><br />
-            <p><i class="bi bi-envelope-at-fill"></i>&nbsp;
-            <h4>kabanofesto1@gmail.com</h4>
-            </p>
-        </div>
-        <div class="board3">
-            <p>
-            <h2>About me!</h2>
-            </p>
-            <br />
-            <p>Developers are modern-day architects, <br />constructing the virtual realms we navigate.
-                <br />Through intricate coding, they give life to software,<br /> weaving innovation into every line.
-                <br />Their work shapes the technological landscape,
-                <br /> defining the future of digital experiences
-            </p>
-            <br />
-            <p style="justify-content: space-around;font-size: 20px;">
-                <i class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-twitter"></i>&nbsp;&nbsp;&nbsp;
-                <i class="bi bi-linkedin"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i>
+            <h4>Festo KABANO©2024</h4>
             </p>
         </div>
     </footer>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
 </body>
 
 </html>
