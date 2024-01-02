@@ -264,7 +264,7 @@ label.brand2 {
         display: none;
     }
 
-    .board3 h5 {
+    .board3 h3 {
         display: none;
     }
 
@@ -280,23 +280,23 @@ label.brand2 {
     }
 
     #body-section {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     #about-section {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     #Services {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     #contact-section {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     footer {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .brand2 h4 {
@@ -405,7 +405,8 @@ label.brand2 {
     background: url(../images/services.jpg) no-repeat;
     background-size: cover;
 }
-#Services .i{
+
+#Services .i {
     font-size: 30px;
 }
 
