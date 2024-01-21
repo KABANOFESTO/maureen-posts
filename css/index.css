@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -82,7 +83,7 @@
     transition: all 0.3s ease;
 }
 
-.menu-list li a:hover {
+.menu-list li a:hover{
     color: #007bff;
 }
 
@@ -123,15 +124,16 @@ label.brand2 {
     margin-top: -1em;
 }
 
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: all 3s ease;
 }
-.reveal.active{
+
+.reveal.active {
     transform: translateY(0px);
-    opacity: 1;   
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -297,6 +299,7 @@ label.brand2 {
     .about-section {
         margin: 5% auto;
     }
+
     .Services {
         margin: 5% auto;
     }
@@ -383,32 +386,6 @@ label.brand2 {
         display: none;
     }
 }
-
-/*
-@media (max-width: 375px){
-    .about-article  .h6{
-        font-size: 15px;
-    }    
-    .content-about1 p{
-        font-size: 10px;
-    }
-    .about-icon i{
-        font-size: 10px;  
-    }
-    .content-about p{
-        font-size: 8px;   
-    }
-    .contactinfo h3 {
-        font-size: 11px;
-    }
-    #tcontact {
-        font-size: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-}
-*/
 
 .Services {
     margin-top: 0%;
@@ -598,8 +575,9 @@ footer {
     margin-top: 4%;
     border-radius: 80px;
 }
+
 .contact-section {
-   margin-top: 10%;
+    margin-top: 10%;
 }
 
 #contact {
