@@ -4,6 +4,11 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #fff;
 }
 
 /* custom scroll bar */
@@ -83,7 +88,7 @@
     transition: all 0.3s ease;
 }
 
-.menu-list li a:hover{
+.menu-list li a:hover {
     color: #007bff;
 }
 
@@ -387,11 +392,16 @@ label.brand2 {
     }
 }
 
+.body-section {
+    margin-top: 0%;
+    height: 100vh;
+    width: 100%;
+}
+
 .Services {
     margin-top: 0%;
     max-height: 100vh;
     width: 90%;
-    background: url(../images/services.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -497,7 +507,7 @@ footer {
 }
 
 .about-section {
-    margin-top: 10%;
+    margin-top: 0%;
     height: 100vh;
     width: 100%;
 }

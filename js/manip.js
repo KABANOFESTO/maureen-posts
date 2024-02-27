@@ -8,7 +8,7 @@ const reveal = () => {
         let revealPoint = 150;
 
         if (revealTop < windowHeight - revealPoint) {
-            sections.style.marginTop = "15em";
+            sections.style.marginTop = "2em";
             reveals[i].classList.add('active');
         } else {
             reveals[i].classList.remove('active');
