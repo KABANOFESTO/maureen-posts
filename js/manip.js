@@ -5,7 +5,7 @@ const reveal = () => {
     for (let i = 0; i < reveals.length; i++) {
         let windowHeight = window.innerHeight;
         let revealTop = reveals[i].getBoundingClientRect().top;
-        let revealPoint = 150;
+        let revealPoint = 100;
 
         if (revealTop < windowHeight - revealPoint) {
             sections.style.marginTop = "2em";
