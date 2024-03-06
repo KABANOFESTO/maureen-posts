@@ -19,6 +19,7 @@
                 'opsz' 24
         }
     </style>
+    <script src="./js/swiper.js"></script>
 </head>
 
 <body>
@@ -125,36 +126,25 @@
                 <h3 style="color:black;text-align: center;font-weight: bold;font-size: 30px;font-family: algerian;">
                     <p>Trading Posts</p><br><br><br>
                 </h3>
-                <article id="blogContainer">
-                    <div style="background-color: rgb(27, 98, 126);">
-                        <img src="./images/altumcode-U0tBTn8UR8I-unsplash.jpg" />
-                        <p>Embrace vibrant hues for a confident <br /> seasonal style that commands <br />
-                            attention.
-                            <br />
-                            <span>&nbsp;<i class="bi bi-person-fill" style="margin-left:0%;"></i>KALAL-insipration
-                                <i class="bi bi-calendar3" style="margin-left:35%;"></i>Jan, 25,2024
-                            </span>
-                        </p>
+                <article class="containerPosts">
+                    <div class="slider-wrapper">
+                        <button id="prev-slide" class="slide-button material-symbols-outlined">chevron_left</button>
+                        <div class="image-list">
+                            <img src="./images/altumcode-U0tBTn8UR8I-unsplash.jpg" alt="" class="image-item" />
+                            <img src="./images/graphic.jpg" alt="" class="image-item" />
+                            <img src="./images/goran-ivos-TorAcb4AQRc-unsplash.jpg" alt="" class="image-item" />
+                            <img src="./images/graphic.jpg" alt="" class="image-item" />
+                            <img src="./images/goran-ivos-TorAcb4AQRc-unsplash.jpg" alt="" class="image-item" />
+                            <img src="./images/graphic.jpg" alt="" class="image-item" />
+                        </div>
+                        <button id="next-slide" class="slide-button material-symbols-outlined">chevron_right</button>
                     </div>
-                    <div style="background-color: rgb(27, 98, 126);">
-                        <img src="./images/graphic.jpg" />
-                        <p>Embrace vibrant hues for a confident <br /> seasonal style that commands <br />
-                            attention.
-                            <br />
-                            <span>&nbsp;<i class="bi bi-person-fill" style="margin-left:0%;"></i>KALAL-insipration
-                                <i class="bi bi-calendar3" style="margin-left:35%;"></i>Jan, 25,2024
-                            </span>
-                        </p>
-                    </div>
-                    <div style="background-color: rgb(27, 98, 126);">
-                        <img src="./images/goran-ivos-TorAcb4AQRc-unsplash.jpg" />
-                        <p>Embrace vibrant hues for a confident <br /> seasonal style that commands <br />
-                            attention.
-                            <br />
-                            <span>&nbsp;<i class="bi bi-person-fill" style="margin-left:0%;"></i>KALAL-insipration
-                                <i class="bi bi-calendar3" style="margin-left:35%;"></i>Jan, 25,2024
-                            </span>
-                        </p>
+                    <div class="slider-scrollbar">
+                        <div class="scrollbar-track">
+                            <div class="scrollbar-thumb">
+
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
