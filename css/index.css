@@ -34,14 +34,6 @@ body {
     padding: 0 30px;
 }
 
-.content-about {
-    max-width: 1250px;
-    margin: auto;
-    font-size: 20px;
-    padding: 0 30px;
-    width: 100%;
-}
-
 .navbar {
     background-color: #fff;
     position: fixed;
@@ -141,11 +133,41 @@ label.brand2 {
     opacity: 1;
 }
 
-@media only screen and (max-width: 1500px) {}
+@media only screen and (max-width: 1500px) {
 
-@media (max-width: 1230px) {
+    .col-sm-6,
+    .col-md-4 {
+        margin: auto;
+    }
+
+    .content-about p {
+        font-size: 18px;
+    }
+
+    #about .content-about1 {
+        font-size: 18px;
+    }
+
+    footer .board2 h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
     .content {
         padding: 0 60px;
+    }
+
+    .content-about p {
+        font-size: 16px;
+    }
+
+    #about .content-about1 {
+        font-size: 16px;
+    }
+
+    footer .board2 h4 {
+        font-size: 16px;
     }
 }
 
@@ -159,12 +181,37 @@ label.brand2 {
     .content {
         padding: 0 30px;
     }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .box {
+        text-align: center;
+        align-items: center;
+        height: 50vh;
+        width: 200%;
+        margin-left: -50%;
+
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    #about .right {
+        display: none;
+    }
+
+    .about-section #about .left {
+        width: 50%;
+        height: 100%;
+    }
+
 }
 
 @media (max-width: 868px) {
-    .content-about p {
-        font-size: 15px;
-    }
 
     .banner {
         max-width: 100%;
@@ -234,24 +281,6 @@ label.brand2 {
         margin-top: 25%;
     }
 
-    .content-about1 p {
-        font-size: 20px;
-    }
-
-    #about .left {
-        background-color: rgb(27, 98, 126);
-        color: white;
-        width: 40%;
-        height: 80vh;
-        border-radius: 5em 3em 4em / 0.5em 3em;
-    }
-
-    #about .right {
-        background-color: #fff;
-        width: 60%;
-        height: 50vh;
-    }
-
     footer {
         background-color: rgb(27, 98, 126);
         justify-content: space-around;
@@ -278,7 +307,47 @@ label.brand2 {
     }
 }
 
+@media (max-width: 700px) {
+    .about-section #about .left {
+        width: 50%;
+        height: 100%;
+    }
+
+}
+
 @media (max-width: 480px) {
+    .about-section #about {
+        margin: 30% auto;
+    }
+
+    .about-section #about .left {
+        width: 80%;
+        height: 150%;
+    }
+
+    #contact .contactinfo #tcontact {
+        font-size: 12px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .box {
+        text-align: center;
+        align-items: center;
+        height: 50vh;
+        width: 400%;
+        margin-left: -135%;
+
+    }
+
+    .img-box {
+        text-align: center;
+        align-items: center;
+    }
+
     .banner {
         margin: 0% auto;
     }
@@ -293,32 +362,6 @@ label.brand2 {
     .brand2 h4,
     .brand3 h2 {
         display: none;
-    }
-
-    .content-about1 p {
-        font-size: 15px;
-    }
-
-    .about-icon i {
-        font-size: 15px;
-    }
-
-    .content-about p {
-        font-size: 10px;
-        max-width: 100%;
-        /* Adjusted to fit smaller screens */
-    }
-
-    .content-about h2 i {
-        font-size: 15px;
-    }
-
-    .about-article h2 {
-        font-size: 5px;
-    }
-
-    #about .left {
-        height: 50vh;
     }
 
     span {
@@ -410,17 +453,19 @@ footer {
 }
 
 #about {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 5%;
 }
 
 #about .left {
     background-color: rgb(27, 98, 126);
     color: white;
-    width: 40%;
+    width: 30%;
     text-align: center;
     height: 80vh;
     border-radius: 5em 3em 4em / 0.5em 3em;
@@ -428,10 +473,9 @@ footer {
 
 #about .right {
     background-color: #fff;
-    font-size: 25px;
-    width: 60%;
-    height: 50vh;
-
+    font-size: 20px;
+    max-width: 40%;
+    margin-left: 5%;
 }
 
 #about img {
@@ -442,8 +486,14 @@ footer {
 }
 
 .about-article h4 {
-    font-size: 25px;
+    font-size: 20px;
 }
+
+#about .content-about1 {
+    font-size: 20px;
+    text-align: left;
+}
+
 
 
 
@@ -454,6 +504,7 @@ footer {
     width: 95%;
     margin: auto;
     margin-top: auto;
+    margin-bottom: auto;
 }
 
 .slider-wrapper {
@@ -577,7 +628,7 @@ footer {
 }
 
 .submit-btn {
-    background-color: darkblue;
+    background-color: #007bff;
     color: white;
     text-align: left;
     width: 122px;
@@ -598,6 +649,8 @@ footer {
     font-size: 15px;
     width: 100%;
     text-align: center;
+    color: #000;
+    font-weight: 600;
 }
 
 #tTable {
@@ -621,14 +674,14 @@ input[type=text] {
 .contactinfo h1 {
     font-size: 36px;
     font-weight: 500;
-    color: white;
+    color: darkblue;
     font-family: algerian;
 }
 
 .contactinfo .h3 {
     font-size: 20px;
     font-weight: 300;
-    color: white;
+    color: darkblue;
 }
 
 #frame {
@@ -666,6 +719,8 @@ span {
     font-family: algerian;
 }
 
+/* css for services respo  */
+
 /* Css for services */
 
 .service_section {
@@ -694,13 +749,17 @@ span {
 
 .col-sm-6,
 .col-md-4 {
-    position: relative;
+
     width: 33%;
     padding-right: 15px;
     padding-left: 15px;
 }
 
 .box {
+    text-align: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -708,21 +767,26 @@ span {
     margin-bottom: 20px;
 }
 
-.img-box {
-    text-align: center;
+.box:hover {
+    background-color: #007bff;
 }
 
-.img-box img {
-    max-width: 50%;
+.img-box {
+    text-align: center;
+    height: 30vh;
+}
+
+.img-box span {
+    width: 50%;
     height: auto;
 }
 
 .img-box .IconColor {
     color: black;
-    max-width: 50%;
+    width: 50%;
     height: auto;
-    font-size: 200px;
-    margin: auto;
+    font-size: 150px;
+    margin: 40px auto;
 }
 
 .img-box:hover {
@@ -737,6 +801,7 @@ span {
 .detail-box p {
     margin-top: 0;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .btn-box {
