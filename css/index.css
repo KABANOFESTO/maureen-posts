@@ -133,6 +133,10 @@ label.brand2 {
     opacity: 1;
 }
 
+.homeContent {
+    margin-left: 5%;
+}
+
 @media only screen and (max-width: 1500px) {
 
     .col-sm-6,
@@ -151,15 +155,24 @@ label.brand2 {
     footer .board2 h4 {
         font-size: 18px;
     }
+
+    .banner {
+        background: none;
+    }
+
+    .homeContent {
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
 }
 
 @media (max-width: 1200px) {
     .content {
         padding: 0 60px;
-    }
-
-    .content-about p {
-        font-size: 16px;
     }
 
     #about .content-about1 {
@@ -266,11 +279,13 @@ label.brand2 {
 
     #contact {
         min-height: 100vh;
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
         background: url(../images/cont.jpg) no-repeat;
         background-size: cover;
     }
@@ -493,9 +508,6 @@ footer {
     font-size: 20px;
     text-align: left;
 }
-
-
-
 
 /* treding post */
 
