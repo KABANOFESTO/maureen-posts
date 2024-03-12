@@ -134,16 +134,17 @@ label.brand2 {
 }
 
 .homeContent {
-    margin-left: 5%;
+    margin: auto;
+    width: 95%;
+
 }
 
 @media only screen and (max-width: 1500px) {
 
     .col-sm-6,
-    .col-md-4 {
-        margin: auto;
+    .col-md-4  {
+        margin-left: 33.8%;
     }
-
     .content-about p {
         font-size: 18px;
     }
@@ -162,8 +163,7 @@ label.brand2 {
 
     .homeContent {
 
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -198,6 +198,9 @@ label.brand2 {
     .row {
         display: flex;
         flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
     }
 
     .container .box {
@@ -210,7 +213,8 @@ label.brand2 {
     }
 
     .container {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #about .right {
@@ -371,7 +375,7 @@ label.brand2 {
     .about-section,
     .contact-section,
     footer {
-        margin: 5% auto;
+        margin: auto;
     }
 
     .brand2 h4,
@@ -389,7 +393,7 @@ label.brand2 {
 .body-section {
     margin-top: 0%;
     height: 100vh;
-    width: 100%;
+    max-width: 90%;
 }
 
 footer {
@@ -741,10 +745,9 @@ span {
 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    justify-content: center;
 }
 
 .heading_container {
@@ -755,16 +758,12 @@ span {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    justify-content: space-around;
 }
 
 .col-sm-6,
 .col-md-4 {
-
-    width: 33%;
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: 25%;
 }
 
 .box {
