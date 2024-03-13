@@ -808,6 +808,7 @@ span {
 .img-box {
     text-align: center;
     height: 30vh;
+    border-radius: 45%;
 }
 
 .img-box span {

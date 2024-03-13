@@ -21,9 +21,8 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
 .form-box {
-    background: #007bff;
+    background: rgb(27, 98, 126);
     position: relative;
     width: 350px;
     height: 500px;
@@ -36,6 +35,9 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+.icon{
+    background-color: red;
 }
 
 .form-box h2 {
@@ -167,4 +169,8 @@ i {
     top: 50%;
     transform: translate(-50%, -50%)scale(1);
     visibility: visible;
+}
+
+#copy {
+    font-size: 16px;
 }
